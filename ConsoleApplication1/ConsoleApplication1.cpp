@@ -16,11 +16,11 @@ int main()
 	cout << "\'Hello world!\'\n";
 	cout << "\"Hello world!\"\n";
 
-	return 0;
 
-	cout << "1.";
-	cout << "\tI\n\t\tlove\n\t\t\tyou\n\t\t\t\tC++!";
-	cout << "2.";
+
+	cout << "1.\n";
+	cout << "\tI\n\t\tlove\n\t\t\tyou\n\t\t\t\tC++!\n";
+	cout << "2.\n";
 	cout << "\t\t…:::RESUME:::…\n";
 	cout << "\t\n";
 	cout << "Name:			\t\tMariya\n";
@@ -31,17 +31,10 @@ int main()
 	cout << "City:			\t\tLawitz\n";
 	cout << "Age:			\t\t45\n";
 	cout << "Hobby:			\t\tC++\n";
-	cout << "::……………………...................……::";
-	cout << "3.";
+	cout << "::.........................................:\n";
+	cout << "3.\n";
 	cout << "\t\n";
-	cout << "Every\n\t\hunter\n\t\twants\n\t\t\tto\n\t\t\t\tknow\n\t\t\t\t\twhere\n\t\t\t\t\t\tthe\n\t\t\t\t\t\t\tpheasant\n\t\t\t\t\t\t\tis.";
-
-	
-	
-
-
-
-
-
+	cout << "Every\n\t\hunter\n\t\twants\n\t\t\tto\n\t\t\t\tknow\n\t\t\t\t\twhere\n\t\t\t\t\t\tthe\n\t\t\t\t\t\t\tpheasant\n\t\t\t\t\t\t\t\t\t\tis.";
+	return 0;
 
 }
