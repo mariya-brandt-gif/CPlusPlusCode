@@ -6,5 +6,6 @@
   <Project Path="01INTRO/01INTRO.vcxproj" Id="864d3708-0108-4c75-bc51-41517e580abc" />
   <Project Path="02_DataType/02_DataType.vcxproj" Id="145b1488-30fb-4cea-bcd1-06377496f7e3" />
   <Project Path="02_Operators/02_Operators.vcxproj" Id="dc199f12-d684-4216-865f-b52b9eb8a127" />
+  <Project Path="04_EnumCycles_04_09_26/04_EnumCycles_04_09_26.vcxproj" Id="f91ffc89-9c82-4171-9399-382f0975da96" />
   <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="8524724e-73f9-403f-9b3e-fec4bb7039e5" />
 </Solution>
