@@ -4,8 +4,15 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="01INTRO/01INTRO.vcxproj" Id="864d3708-0108-4c75-bc51-41517e580abc" />
+  <Project Path="02_/02_.vcxproj" Id="9ecf7c3b-79d4-4720-8065-00eda00b794c" />
   <Project Path="02_DataType/02_DataType.vcxproj" Id="145b1488-30fb-4cea-bcd1-06377496f7e3" />
   <Project Path="02_Operators/02_Operators.vcxproj" Id="dc199f12-d684-4216-865f-b52b9eb8a127" />
   <Project Path="04_EnumCycles_04_09_26/04_EnumCycles_04_09_26.vcxproj" Id="f91ffc89-9c82-4171-9399-382f0975da96" />
+  <Project Path="05_IncludeCycles/05_IncludeCycles.vcxproj" Id="3cc5daee-7ab5-498c-8dd1-43c7e0c7c166" />
+  <Project Path="06_Array/06_Array.vcxproj" Id="abba976e-ada3-4b25-9d94-41804002c43c" />
+  <Project Path="07_/07_.vcxproj" Id="48e22b7d-f239-4824-abc4-8e8ad2a825a1" />
+  <Project Path="09_Templ/09_Templ.vcxproj" Id="42ed9ae8-5dc9-4057-b1dc-ad4c1b7c6317" />
+  <Project Path="10_Practical_work/10_Practical_work.vcxproj" Id="ab7a272d-4a9b-4fcd-a30d-b29c10785f85" />
+  <Project Path="10_Select_Sort/10_Select_Sort.vcxproj" Id="6aef05b7-958a-4388-af56-02018f7240b2" />
   <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="8524724e-73f9-403f-9b3e-fec4bb7039e5" />
 </Solution>
