@@ -1,5 +1,4 @@
-// 09_Templ.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
+
 
 
 
@@ -109,7 +108,7 @@ float min3(float a, float b, float c)
 }
 double min3(double a, double b, double c)
 {
-    int result = a;
+    double result = a;
     if (b < result)
         result = b;
     if (c < result)
@@ -176,20 +175,144 @@ T maxArrayTwoDimensional(T a2[][6], int rows)
 
 
 
-void InitArray(int arr[], int size)
+void InitMatrix(int matrix[][10], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rand() % 100;
+        for (int j = 0; j < size; j++)
+        {
+            matrix[i][j] = rand() % 100;
+        }
     }
+        
 }
-void ShowArray(int arr[], int size)
+void InitMatrix(double matrix[][10], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        cout << arr[i] << " ";
+        for (int j = 0; j < size; j++)
+        {
+            matrix[i][j] = rand() % 1000 /10;
+        }
     }
-    cout << endl;
+        
+}
+void InitMatrix(char matrix[][10], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            matrix[i][j] = 'A' + rand() % 26;
+        }
+    }
+        
+}
+
+
+
+void ShowMatrix(int matrix[][10], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+        cout << setw(4) << matrix[i][j];
+        }
+        cout << endl;
+    }
+   
+}
+void ShowMatrix(double matrix[][10], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+        cout << setw(4) << matrix[i][j];
+        }
+        cout << endl;
+    }
+   
+}
+void ShowMatrix(char matrix[][10], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+        cout << setw(4) << matrix[i][j];
+        }
+        cout << endl;
+    }
+   
+}
+
+int MaxDiagonal(int matrix[][10], int size) 
+{
+    int max = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] > max)
+            max = matrix[i][i];
+    }
+    return max;
+}
+double MaxDiagonal(double matrix[][10], int size) 
+{
+    int max = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] > max)
+            max = matrix[i][i];
+    }
+    return max;
+}
+char MaxDiagonal(char matrix[][10], int size) 
+{
+    char max = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] > max)
+            max = matrix[i][i];
+    }
+    return max;
+}
+int MinDiagonal(int matrix[][10], int size) 
+{
+    int min = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] < min)
+            min = matrix[i][i];
+    }
+    return min;
+}
+double MinDiagonal(double matrix[][10], int size) 
+{
+    int min = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] < min)
+            min = matrix[i][i];
+    }
+    return min;
+}
+char MinDiagonal(char matrix[][10], int size) 
+{
+    char min = matrix[0][0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (matrix[i][i] < min)
+            min = matrix[i][i];
+    }
+    return min;
 }
 
 
@@ -249,7 +372,63 @@ int main()
 
 
     const int size = 10;
-    int arr[size];
-    InitArray(arr, size);
-    ShowArray(arr, size);
 
+    int intMatrix[10][10];
+    double doubleMatrix[10][10];
+    char charMatrix[10][10];
+
+    cout << "Int Matrix: " << endl;
+
+    InitMatrix(intMatrix, size);
+    ShowMatrix(intMatrix, size);
+
+    cout << "Max diagonal: " << MaxDiagonal(intMatrix, size) << endl;
+    cout << "Min diagonal: " << MinDiagonal(intMatrix, size) << endl;
+    cout << endl;
+
+
+
+    cout << "Double Matrix: " << endl;
+
+    InitMatrix(doubleMatrix, size);
+    ShowMatrix(doubleMatrix, size);
+
+    cout << "Max diagonal: " << MaxDiagonal(doubleMatrix, size) << endl;
+    cout << "Min diagonal: " << MinDiagonal(doubleMatrix, size) << endl;
+    cout << endl;
+    
+
+
+    cout << "Char Matrix: " << endl;
+
+    InitMatrix(charMatrix, size);
+    ShowMatrix(charMatrix, size);
+
+    cout << "Max diagonal: " << MaxDiagonal(charMatrix, size) << endl;
+    cout << "Min diagonal: " << MinDiagonal(charMatrix, size) << endl;
+    cout << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
