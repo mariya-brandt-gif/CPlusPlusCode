@@ -525,7 +525,7 @@ int main()
     }
 
     {
-        cout << "Home work Exercise 2a" << endl;
+        cout << "Home work Exercise 2" << endl;
         int n;
         cout << "Enter n: ";
         cin >> n;
@@ -549,6 +549,9 @@ int main()
             }
             cout << endl;
         }
+
+
+
         int max = a[0][0];
 
         for (int i = 0; i < n; i++)
@@ -565,9 +568,177 @@ int main()
             }
 
         }
-        cout << "Number of zero elements: " << max << endl;
+        cout << "The maximum Number in image 1: " << max << endl;
+
+        int max2 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (j <= i)
+                {
+                    if (a[i][j] > max2)
+                    {
+                        max2 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 2: " << max2 << endl;
+
+        int max3 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i <= j && i+j <= n-1)
+                {
+                    if (a[i][j] > max3)
+                    {
+                        max3 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 3: " << max3 << endl;
+
+
+        int max4 = a[0][n-1];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i >= j && i+j >= n-1)
+                {
+                    if (a[i][j] > max4)
+                    {
+                        max4 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 4: " << max4 << endl;
+
+
+        int max5 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if ((i <= j && i + j <= n - 1) || (i >= j && i + j >= n - 1))
+                {
+                    if (a[i][j] > max5)
+                    {
+                        max5 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 5: " << max5 << endl;
+
+        int max6 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if ((i >= j && i + j <= n - 1) || (i <= j && i + j >= n - 1))
+                {
+                    if (a[i][j] > max6)
+                    {
+                        max6 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 6: " << max6 << endl;
+
+        int max7 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i>=j && i+j <=n-1)
+                {
+                    if (a[i][j] > max7)
+                    {
+                        max7 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 7: " << max7 << endl;
+
+
+        int max8 = a[n-1][n-1];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i <= j && i + j >= n - 1)
+                {
+                    if (a[i][j] > max8)
+                    {
+                        max8 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 8: " << max8 << endl;
+
+
+        int max9 = a[0][0];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i+ j <= n - 1)
+                {
+                    if (a[i][j] > max9)
+                    {
+                        max9 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 9: " << max9 << endl;
+
+
+        int max10 = a[n-1][n-1];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i + j >= n - 1)
+                   
+                {
+                    if (a[i][j] > max10)
+                    {
+                        max10 = a[i][j];
+                    }
+                }
+            }
+
+        }
+        cout << "The maximum Number in image 10: " << max10 << endl;
 
     }
+
+
+
+
+
+
+
+
+
 
 
 
