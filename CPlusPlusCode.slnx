@@ -14,5 +14,6 @@
   <Project Path="09_Templ/09_Templ.vcxproj" Id="42ed9ae8-5dc9-4057-b1dc-ad4c1b7c6317" />
   <Project Path="10_Practical_work/10_Practical_work.vcxproj" Id="ab7a272d-4a9b-4fcd-a30d-b29c10785f85" />
   <Project Path="10_Select_Sort/10_Select_Sort.vcxproj" Id="6aef05b7-958a-4388-af56-02018f7240b2" />
+  <Project Path="11_Recursion_QuickSort/11_Recursion_QuickSort.vcxproj" Id="dbfb8158-08e8-4585-84d0-8b15f9af490d" />
   <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="8524724e-73f9-403f-9b3e-fec4bb7039e5" />
 </Solution>
