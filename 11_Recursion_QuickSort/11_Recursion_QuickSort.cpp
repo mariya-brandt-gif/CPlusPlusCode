@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 void Foo(int a)
 {
     if (a == 0)
@@ -114,12 +115,42 @@ int sumRange(int a, int b)
 
     return a + sumRange(a + 1, b);
 }
+//Practical work 4
+int findMinPos(int a[], int pos, int minPos)
+{
+    if (pos > 90)
+        return minPos;
+    int sum = 0;
+    int minSum = 0;
 
+    for (int i = pos; i < pos + 10; i++)
+        sum = sum + a[i];
 
+    for (int i = minPos; i < minPos + 10; i++)
+        minSum = minSum + a[i];
+
+    if (sum < minSum)
+        minPos = pos;
+    return findMinPos(a, pos + 1, minPos);
+}
+//Practical work 5
+void turm(int n, int from, int to, int temp)
+{
+    if (n ==1)
+    {
+        cout << from << " -> " << to << endl;
+        return;
+    }
+    turm(n - 1, from, temp, to);
+    cout << from << " -> " << to << endl;
+    turm(n - 1, temp, to, from);
+
+}
 
 
 int main()
 {
+
     /*Foo(10);
     const int size = 10;
     int arr[size] = { 1,8,4,5,6,3,7,9,11,2 };
@@ -173,9 +204,48 @@ int main()
         cout << "Enter b: ";
         cin >> b;
         cout << "Sum of numer form a to b: "<< sumRange(a, b) << endl;
+        cout << endl;
         
     }
 
+
+
+    {
+        int a[100];
+        srand(time(0));
+
+        for (int i = 0; i < 100; i++)
+        {
+            a[i] = rand() % 100;
+            cout << a[i] << " ";
+        }
+        int minPos = findMinPos(a, 0, 0);
+
+        cout << endl;
+        cout << "Start of the sequence: " << minPos + 1<< endl;
+
+        int sum = 0;
+
+        cout << "Block with the smallest sum: ";
+
+        for (int i = minPos; i < minPos + 10; i++)
+        {
+            cout << a[i] << " ";
+            sum += a[i];
+        }
+        cout << endl;
+        cout << "Sum: " << sum << endl;
+ 
+
+    }
+
+
+    {
+        int n = 6;
+        turm(n, 1, 3, 2);
+        return 0;
+        
+    }
 
 
 
