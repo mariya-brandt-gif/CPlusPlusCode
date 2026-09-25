@@ -79,7 +79,7 @@ void showReverse(int* p, int a2)
 {
 	cout << "Reverse order: ";
 
-	for (int i = a2-1; i > 0; i--)
+	for (int i = a2-1; i >= 0; i--)
 	{
 		cout << *(p + i) << " ";
 	}
@@ -96,9 +96,59 @@ int calculateSum(int* p, int a2)
 
 }
 
+// Homework 1
 
+int findMinIndex(int h1[], int n1) 
+{
+	int minIndex = 0;
+	for (int i = 1; i < n1; i++)
+	{
+		if (h1[i] < h1[minIndex])
+		{
+			minIndex = i;
+		}
+	}
+	return minIndex;
+}
+int findMaxIndex(int h1[], int n1) 
+{
+	int maxIndex = 0;
+	for (int i = 1; i < n1; i++)
+	{
+		if (h1[i] > h1[maxIndex])
+		{
+			maxIndex = i;
+		}
+	}
+	return maxIndex;
+}
+void swapElements(int h1[], int index1, int index2)
+{
+	int temp = h1[index1];
+	h1[index1] = h1[index2];
+	h1[index2] = temp;
+}
 
+void showArray(int h1[], int n1)
+{
+	for (int i = 0; i < n1; i++)
+	{
+		cout << h1[i] << " ";
+	}
+	cout << endl;
+}
 
+// Homework 2
+
+void swapEvedOdd(int* arr, int n)
+{
+	for (int i = 0; i < n-1; i+=2)
+	{
+		int temp = *(arr + i); 
+		*(arr + i) = *(arr + i + 1);
+		*(arr + i + 1) = temp;
+	}
+}
 
 
 
@@ -219,33 +269,33 @@ int main()
 	*/
 
 
+	//{
+	//	int a;
+	//	int b;
+	//	int c;
+
+	//	cout << "Enter three Number: ";
+	//	cin >> a >> b >> c;
+
+	//	int* pa = &a;
+	//	int* pb = &b;
+	//	int* pc = &c;
+
+	//	int product = *pa * *pb * *pc;
+	//	int average = (*pa * *pb * *pc) / 3;
+	//	int min = *pa;
+
+	//	if (*pb < min)
+	//		min = *pb;
+	//	if (*pc < min)
+	//		min = *pc;
+	//	cout << "Product: " << product << endl;
+	//	cout << "Average: " << average << endl;
+	//	cout << "Minimum: " << min << endl;
+	//}
+
 	{
-		int a;
-		int b;
-		int c;
-
-		cout << "Enter three Number: ";
-		cin >> a >> b >> c;
-
-		int* pa = &a;
-		int* pb = &b;
-		int* pc = &c;
-
-		int product = *pa * *pb * *pc;
-		int average = (*pa * *pb * *pc) / 3;
-		int min = *pa;
-
-		if (*pb < min)
-			min = *pb;
-		if (*pc < min)
-			min = *pc;
-		cout << "Product: " << product << endl;
-		cout << "Average: " << average << endl;
-		cout << "Minimum: " << min << endl;
-	}
-
-	{
-		const int a2 = 12;
+		const int a2 = 5;
 		int arr[a2];
 
 		int* p = arr;
@@ -260,8 +310,38 @@ int main()
 
 	}
 
+	{
+		int n1;
+		cout << "Number of elements: ";
+		cin >> n1;
 
+		int h1[100];
+		cout << "Enter the elements: "<< endl;
+		for (int i = 0; i < n1; i++)
+		{
+			cin >> h1[i];
+		}
 
+		int minIndex = findMinIndex(h1, n1);
+		int maxIndex = findMaxIndex(h1, n1);
+
+		swapElements(h1, minIndex, maxIndex);
+		cout << "Transformed array: " << endl;
+		showArray(h1, n1);
+
+	}
+
+	{
+		const int n2 = 8;
+		int arr[n2] = { 28, 21, 69, 54, 65, 38, 98,3 };
+
+		swapEvedOdd(arr, n2);
+		for (int i = 0; i < n2; i++)
+		{
+			cout << arr[i] << " ";
+		}
+
+	}
 
 
 
