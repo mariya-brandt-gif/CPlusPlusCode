@@ -263,27 +263,57 @@ int main()
         int size = 7;
         int* arr = createArray2(size);
         InitArray2(arr, size);
-        cout << "First array: ";
-        ShowArray2(arr, size);
 
-        addElement(arr, size, 200);
-        cout << "Array after adding 200: ";
-        ShowArray2(arr, size);
+        int choice;
 
-        removeLastElement(arr, size);
-        cout << "Array after remove last element: ";
-        ShowArray2(arr, size);
+        do
+        {
+            cout << "\n========== MENU =========="<< endl;
+            cout << "1. Show first array: " << endl;
+            cout << "2. Array after adding 200: " << endl;
+            cout << "3. Array after remove last element: "<< endl;
+            cout << "4. Array after remove element by index: " << endl;
+            cout << "5. Array after inserting 555 at index 2: "<< endl;
+            cout << "0. Exit: ";
+            cout << " ============================ " << endl;
 
-        removeElementByIndex(arr, size, 3);
-        cout << "Array after remove element by index: ";
-        ShowArray2(arr, size);
+            cout << " Choice: "; cin >> choice;
 
-        insertElement(arr, size, 2, 555);
-        cout << "Array after inserting 555 at index 2: ";
-        ShowArray2(arr, size);
+            switch (choice)
+            {
+            case 1:
+                cout << "First array: ";
+                ShowArray2(arr, size);
+                break;
+            case 2:
+                addElement(arr, size, 200);
+                cout << "Array after adding 200: ";
+                ShowArray2(arr, size);
+                break;
+            case 3:
+                removeLastElement(arr, size);
+                cout << "Array afte remove last element: ";
+                ShowArray2(arr, size);
+                break;
+            case 4:
+                removeElementByIndex(arr, size, 3);
+                cout << "Array after remove element by index: ";
+                ShowArray2(arr, size);
+                break;
+            case 5: 
+                insertElement(arr, size, 2, 555);
+                cout << "Array after inserting 555 at index 2: ";
+                ShowArray2(arr, size);
+                break;
+            case 0: 
+                cout << "Exit." << endl;
+                break;
+            default:
+                cout << "Invalid selection!"<< endl;
+            }
 
-        delete[] arr;
-
+        } while (choice != 0);
+        delete[]arr;
     }
 
 
