@@ -17,5 +17,6 @@
   <Project Path="11_Recursion_QuickSort/11_Recursion_QuickSort.vcxproj" Id="dbfb8158-08e8-4585-84d0-8b15f9af490d" />
   <Project Path="12_/12_.vcxproj" Id="c8eb931c-8faf-47fb-af8b-c2466ac0d643" />
   <Project Path="13_Links_DynamicMemory/13_Links_DynamicMemory.vcxproj" Id="909104ac-441d-4b9e-9b3d-24a3644435f1" />
+  <Project Path="14_DynamicTwoDemntionArray/14_DynamicTwoDemntionArray.vcxproj" Id="8da53a6e-8661-432d-b4a1-1bf83f193f43" />
   <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="8524724e-73f9-403f-9b3e-fec4bb7039e5" />
 </Solution>
