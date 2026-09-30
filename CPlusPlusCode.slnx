@@ -18,5 +18,6 @@
   <Project Path="12_/12_.vcxproj" Id="c8eb931c-8faf-47fb-af8b-c2466ac0d643" />
   <Project Path="13_Links_DynamicMemory/13_Links_DynamicMemory.vcxproj" Id="909104ac-441d-4b9e-9b3d-24a3644435f1" />
   <Project Path="14_DynamicTwoDemntionArray/14_DynamicTwoDemntionArray.vcxproj" Id="8da53a6e-8661-432d-b4a1-1bf83f193f43" />
+  <Project Path="15_C_Style_rows/15_C_Style_rows.vcxproj" Id="19412000-6e18-4541-aae5-d067f39db27f" />
   <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="8524724e-73f9-403f-9b3e-fec4bb7039e5" />
 </Solution>
